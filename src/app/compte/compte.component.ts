@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { CompteService } from '../services/compte.service';
 import { Compte } from 'src/models/Compte';
 import Swal from 'sweetalert2';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-compte',
@@ -12,11 +13,16 @@ import Swal from 'sweetalert2';
 export class CompteComponent implements OnInit {
   comptes: Compte[] = [];
 
-  constructor(private compteService: CompteService, private router: Router) {}
+  constructor(private compteService: CompteService,private AuthService:AuthService, private router: Router) {}
 
   ngOnInit(): void {
     this.fetchComptes();
+    
   }
+  logout():void{
+    this.AuthService.logout();
+  }
+
 
   fetchComptes(): void {
     this.compteService.getAllComptes().subscribe({
