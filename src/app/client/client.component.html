@@ -1,0 +1,25 @@
+<div class="user-list">
+    <h2>List of Users</h2>
+    <button (click)="navigateToAddUser()">Add New User</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.username }}</td>
+          <td>{{ user.password }}</td>
+          <td>
+            <button (click)="deleteUser(user.id)">Delete</button>
+            <button (click)="deleteUserAjax(user.id)">Delete via AJAX</button>
+            <!-- Corrected Edit button with 'user._id' -->
+            <button [routerLink]="['/client', user.id, 'edit']">Edit</button>
+        </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

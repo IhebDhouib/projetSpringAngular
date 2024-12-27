@@ -1,0 +1,214 @@
+/* General Styling for the Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.compte-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.compte-form .form-group {
+    margin-bottom: 15px;
+}
+
+.compte-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.compte-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.compte-form input[readonly] {
+    background-color: #f0f0f0;
+    /* Light grey for readonly fields */
+}
+
+.compte-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.compte-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.compte-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.compte-form button[type="button"] {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 10px;
+}
+
+.compte-form button[type="button"]:hover {
+    background-color: #5a6268;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.table button.btn-warning {
+    background-color: #ffc107;/* General Styling for the Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        /* User List Page Styling */
+        .user-list {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .user-list h2 {
+            margin-bottom: 15px;
+        }
+    
+        .user-list button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            /* Green color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 15px;
+        }
+    
+        .user-list button:hover {
+            background-color: #218838;
+        }
+    
+        .user-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        .user-list th,
+        .user-list td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+    
+        .user-list th {
+            background-color: #007bff;
+            color: white;
+        }
+    
+        .user-list tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+    
+        .user-list button {
+            padding: 6px 12px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .user-list button.btn-warning {
+            background-color: #ffc107;
+            color: black;
+        }
+    
+        .user-list button.btn-warning:hover {
+            background-color: #e0a800;
+        }
+    
+        .user-list button.btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+    
+        .user-list button.btn-danger:hover {
+            background-color: #c82333;
+        }
+    
+        /* Action Buttons in the Table */
+        .user-list .action-buttons button {
+            margin-right: 5px;
+        }
+    color: black;
+}
+
+.table button.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.table button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.table button.btn-danger:hover {
+    background-color: #c82333;
+}

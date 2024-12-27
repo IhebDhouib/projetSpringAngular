@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <h2>Signup</h2>
+    <form [formGroup]="signupForm" (ngSubmit)="onSignUp()">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input
+          type="text"
+          id="username"
+          class="form-control"
+          formControlName="username"
+          placeholder="Enter your username"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          formControlName="password"
+          placeholder="Enter your password"
+        />
+      </div>
+      
+      
+      <button type="submit" class="btn btn-primary" >
+        Signup
+      </button>
+    </form>
+  </div>
+  
