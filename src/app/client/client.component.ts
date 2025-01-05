@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/client.service';
 import { Router } from '@angular/router';
 import { ClientFormComponent } from '../client-form/client-form.component';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-client',
@@ -11,12 +12,14 @@ import { ClientFormComponent } from '../client-form/client-form.component';
 export class ClientComponent implements OnInit {
   users: any[] = []; // Array to store users
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService,private AuthService:AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.loadUsers(); // Fetch users on component initialization
   }
-  
+  logout():void{
+    this.AuthService.logout();
+  }
 
   loadUsers(): void {
     this.userService.getUsers().subscribe(
